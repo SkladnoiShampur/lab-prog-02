@@ -1,0 +1,16 @@
+print("Введите координаты первой точки")
+a1=int(input())
+a2=int(input())
+print("Введите координаты второй точки")
+b1=int(input())
+b2=int(input())
+print("Введите координаты третьей точки")
+c1=int(input())
+c2=int(input())
+print("Введите координаты четвёртой точки")
+d1=int(input())
+d2=int(input())
+if ((a1==d1 and a2==b2) and (c1==b1 and c2==d2)) or ((a1==b1 and a2==d2) and (c1==d1 and c2==b2)) or ((a1==d1 and a2==c2) and (b1==c1 and b2==d2)) or ((a1==d1 and a2==c2) and (b1==c1 and b2==d2)):
+    print("Данные точки образуют прямоугольник")
+else:
+    print("Данные точки  не образуют прямоугольник")
