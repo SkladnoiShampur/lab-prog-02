@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int a1,a2,b1,b2;
+    double a,b,S,P;
+    printf("Введите координаты противоположных вершин прямоугольника");
+    scanf("%d %d %d %d", &a1, &a2, &b1, &b2);
+    a=abs(a1-b1);
+    b=abs(a2-b2);
+    P=2*(a+b);
+    S=a*b;
+    printf("Периметр равен:%.1lf \n Площадь равна: %.1lf", P, S);
+    return 0;
+}
